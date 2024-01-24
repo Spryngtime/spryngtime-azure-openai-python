@@ -10,7 +10,6 @@ import openai
 from SpryngtimeOpenAI.ChatCompletion import ChatCompletion
 
 openai.api_key = str(os.getenv("AZURE_OPENAI_KEY"))
-print(os.getenv("AZURE_OPENAI_KEY"))
 openai.api_base = str(os.getenv("AZURE_OPENAI_ENDPOINT")) # your endpoint should look like the following https://YOUR_RESOURCE_NAME.openai.azure.com/
 openai.api_type = 'azure'
 openai.api_version = '2023-05-15' # this might change in the future

@@ -26,6 +26,7 @@ response = openai.ChatCompletion.create(
         {"role": "user", "content": "What is 5*2"},
     ],
 max_tokens=20,
+    conversation_id='testing1'
 )
 text = response['choices'][0]['message']['content']
 print(text)
