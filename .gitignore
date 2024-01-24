@@ -1,3 +1,9 @@
 
 .env
 .idea
+dist/spryngtime-azure-openai-python-1.0.1.tar.gz
+spryngtime_azure_openai_python.egg-info/dependency_links.txt
+spryngtime_azure_openai_python.egg-info/PKG-INFO
+spryngtime_azure_openai_python.egg-info/requires.txt
+spryngtime_azure_openai_python.egg-info/SOURCES.txt
+spryngtime_azure_openai_python.egg-info/top_level.txt
