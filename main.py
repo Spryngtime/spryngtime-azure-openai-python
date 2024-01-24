@@ -25,9 +25,13 @@ response = openai.ChatCompletion.create(
     messages=[
         {"role": "user", "content": "What is 5*2"},
     ],
-max_tokens=20,
-    conversation_id='testing1'
+max_tokens=20
 )
 text = response['choices'][0]['message']['content']
 print(text)
 print(response)
+
+
+embed = openai.Embedding.create(input=["Testing"],
+            engine="text-embedding-ada-002")
+print(embed)

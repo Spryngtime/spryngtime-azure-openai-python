@@ -12,7 +12,8 @@ class ChatCompletion():
 
         start_time = time.time()
         conversation_id = kwargs.get("conversation_id", "")
-        kwargs.pop("conversation_id") # OpenAI API doesn't like conversation_id
+        if conversation_id != "":
+            kwargs.pop("conversation_id") # OpenAI API doesn't like conversation_id
         result = openai.ChatCompletion.create(*args, **kwargs)
 
         latency = int((time.time() - start_time) * 1000) # Convert to milliseconds
